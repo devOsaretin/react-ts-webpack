@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2020",  // Set the target ECMAScript version
+    "lib": ["dom", "dom.iterable", "esnext"], // Include necessary libraries
+    "allowJs": true, // Allow compiling existing JavaScript files
+    "skipLibCheck": true, // Skip type checking for built-in libraries (optional)
+    "esModuleInterop": true, // Allow for modern ES module imports
+    "allowSyntheticDefaultImports": true, // Allow using default imports from libraries without a named export
+    "strict": true, // Enable strict type checking
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file naming case
+    "noFallthroughCasesInSwitch": true, // Report cases in switch statements that fall through
+    "module": "esnext", // Use the ESNext module system
+    "moduleResolution": "node", // Use Node.js module resolution strategy
+    "isolatedModules": true, // Enable strict module isolation
+    "jsx": "react-jsx", // Specify JSX parsing mode for React
+    "incremental": true, // Enable incremental compilation
+
+    // (Optional) Additional configurations
+    "sourceMap": true, // Generate source maps for debugging
+    "declaration": true, // Generate type declaration files (.d.ts)
+    "outDir": "build", // Output directory for compiled files (optional)
+  },
+  "include": ["src"], // Specify the root directory for TypeScript files
+  "exclude": ["node_modules"] // Exclude the node_modules directory
+}
