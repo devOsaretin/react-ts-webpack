@@ -1,11 +1,21 @@
 import "./styles.css";
 import Logo from "./foodlogo.png";
+import { useState } from "react";
+import Chat from "./Chat";
 
 export const App = () => {
+	const [showChat, setShowChat] = useState(false);
+
+	const handleShowChat = () => setShowChat(x => !x);
 	return (
 		<>
-			<h1>React Typescript Webpack</h1>
-			<img src={Logo} alt="Food Logo" width={300} height={200} />
+			{showChat ? (
+				<Chat showChat handleShowChat={handleShowChat} />
+			) : (
+				<button className="chat-btn" onClick={() => setShowChat(true)}>
+					CHAT
+				</button>
+			)}
 		</>
 	);
 };

@@ -1,3 +1,27 @@
 h1 {
   color: green
 }
+
+button {
+  padding: 20px 40px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.chat-box {
+  position: fixed;
+  width: 450px;
+  height: 600px;
+  background-color: brown;
+  bottom: 8px;
+  right: 8px;
+  padding: 12px;
+}
+.chat-btn {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  cursor: pointer;
+  background-color: green;
+}
